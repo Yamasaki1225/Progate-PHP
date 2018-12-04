@@ -9,6 +9,36 @@
 
 <?php
 /**
+ * switch文
+ */
+
+ //switch文を用いておみくじのゲームを作ってみましょう。
+$num = 23;
+//$remainderという変数に、%を用いて、$numを3で割ったときの余りを代入してください。
+$remainder = $num % 3;
+//remainderが0の場合は「大吉です。」
+//・1の場合は「中吉です。」
+//・2の場合は「小吉です。」
+//・それ以外の場合(default)は「凶です。」とechoしてください。
+switch ($remainder) {
+  case 0:
+    echo "大吉です。";
+    break;
+  case 1:
+    echo "中吉です。";
+    break;
+  case 2:
+    echo "小吉です。";
+    break;
+  default:
+    echo "凶です。";
+    break;
+} 
+// echo $remainder."<br>";
+
+
+
+/**
  * &&、||
  */
 $x = 1071;
@@ -27,8 +57,6 @@ if ((($x % 3) == 0) && (($x % 7) == 0)) {
   echo "xは7の倍数でも3の倍数でもありません。<br>";
 }
 
-
-
 /**
  * else,elseif文
  */
@@ -45,7 +73,6 @@ if ($age >= 30) {
 }
 
 ?>
-
 
 </body>
 </html>
