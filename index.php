@@ -9,6 +9,20 @@
 
 <?php
 /**
+ * 戻り値
+ */
+//getCircleAreaという名前の関数を定義してください。
+//仮引数を$radiusとする戻り値を「$radius * $radius * 3」とする
+function getCircleArea($radius) {
+  $radius = $radius * $radius * 3;
+  return $radius;
+}
+//引数を5として関数getCircleAreaを呼び出して、戻り値を変数$circleAreaに代入してください。
+$circleArea = getCircleArea(5);
+echo $circleArea."<br>";
+
+
+/**
  * 関数を自作する
  */
 //helloという名前の関数を定義してください。
