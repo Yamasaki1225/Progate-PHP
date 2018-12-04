@@ -15,7 +15,14 @@
 function hello() {
   echo "Hello, World";
 }
-  
+hello();
+echo "<br>";
+//printRectangleAreaという名前の関数を定義してください。
+//1つ目の仮引数を$heightとする。2つ目の仮引数を$widthとする。
+function printRectangleArea($height, $width) {
+  echo $height * $width."<br>";
+}
+printRectangleArea(5, 10);
 
 /**
  * 関数
