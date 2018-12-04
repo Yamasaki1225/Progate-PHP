@@ -9,6 +9,16 @@
 
 <?php
 /**
+ * foreach文
+ */
+//想配列$scoresのキーを変数$key、値を変数$valueとするforeach文を書いてください。
+//各教科の点数が、「数学は70点です。」のように出力されるようechoしてください。
+$scores = array('数学' => 70, '英語' => 90, '国語' => 80);
+foreach ($scores as $key => $value) {
+  echo $key."は".$value."です<br>";
+}
+
+/**
  * continue文
  */
 //for文を用いて1から1000までの数字をechoしてください。
@@ -17,7 +27,7 @@ for ($i = 1; $i <= 1000; $i++) {
   if (($i % 3) == 0) {
     continue;
   }
-  echo $i."<br>";
+  // echo $i."<br>";
 }
 
 /**
