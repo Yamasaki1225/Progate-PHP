@@ -9,6 +9,18 @@
 
 <?php
 /**
+ * 配列
+ */
+//$colorsという配列を作り赤、青、黄を入れ$colorsの0番目をechoしてください。
+$colors = array ("赤", "青", "黄");
+echo $colors[0]."<br>";
+//白を追加し、白を出力してください。
+$colors[] = "白";
+echo $colors[3]."<br>";
+
+
+
+/**
  * switch文
  */
 
