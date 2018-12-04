@@ -9,6 +9,15 @@
 
 <?php
 /**
+ * 関数を自作する
+ */
+//helloという名前の関数を定義してください。
+function hello() {
+  echo "Hello, World";
+}
+  
+
+/**
  * 関数
  */
 //strlenを用いて$strの長さをechoしてください。
@@ -166,4 +175,3 @@ if ($age >= 30) {
 
 </body>
 </html>
-
