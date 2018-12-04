@@ -9,6 +9,21 @@
 
 <?php
 /**
+ * 関数
+ */
+//strlenを用いて$strの長さをechoしてください。
+$str = 'progate';
+echo strlen($str);
+echo '<br>';
+//countを用いて$arrayの要素数をechoしてください。
+$array = array('HTML', 'CSS', 'PHP');
+echo count($array);
+echo '<br>';
+//randを用いて10から15までのランダムな数字をechoしてください。
+echo rand(10, 15);
+
+
+/**
  * foreach文
  */
 //想配列$scoresのキーを変数$key、値を変数$valueとするforeach文を書いてください。
