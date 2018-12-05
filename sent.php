@@ -24,10 +24,11 @@
       <div class="form-title">入力内容</div>
 
       <div class="form-item">■ 名前</div>
-      <!-- nameを受け取りechoしましょう -->
       <?php echo $_POST["name"]?>
+      <div class="form-item">■ 年齢</div>
+      <!-- ageを受け取りechoしましょう --> 
+      <?php echo $_POST["age"] ?>
       <div class="form-item">■ 内容</div>
-      <!-- bodyを受け取りechoしましょう -->
       <?php echo $_POST["body"]?>
     </div>
 
