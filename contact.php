@@ -23,11 +23,25 @@
         <div class="form-item">名前</div>
         <input type="text" name="name">
         <div class="form-item">年齢</div>
-        <!-- この下にselectタグを書いていきましょう -->
         <select name="age">
             <option value="未選択">選択してください</option>
-            <option value="20代">20代</option>
-            <option value="30代">30代</option>
+            <!-- for文を用いて6歳から100歳までをoptionで選べるようにしましょう -->
+            <?php for ($i = 6; $i <= 100; $i ++): ?>
+            <?php  echo "<option value='{$i}'>{$i}歳</option>"; ?>
+            <?php endfor; ?>
+        </select>
+        <div class="form-item">お問い合わせの種類</div>
+        <?php 
+          $types = array('Progateに関するお問い合わせ', 'Progateに対する意見', '採用に関するお問い合わせ', '取材・メディア関連のお問い合わせ', '料金に関するお問い合わせ', 'その他');
+         ?>
+        <!-- この下にselectタグを書いていきましょう -->
+        <select name="category">
+        <option value="未選択">選択してください</option>
+        <?php
+             foreach ($types as $type) {
+              echo "<option value='{$type}'>{$type}</option>";
+             }
+           ?>
         </select>
         <div class="form-item">内容</div>
         <textarea name="body"></textarea>
