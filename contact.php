@@ -21,7 +21,19 @@
         <div class="form-title">お問い合わせ</div>
         <!--  formタグを追加し、action属性をsent.php・method属性をpostにしてください-->
         <!-- この下にformタグを書いていきましょう -->
-            <form action="sent.php" method="post">
+        <form action="sent.php" method="post">
+        <div class="form-item">名前</div>
+        <!-- この下にinputタグを書いていきましょう -->
+        <input type="text" name="name">
+
+        <div class="form-item">内容</div>
+        <!-- この下にtextareaタグを書いていきましょう -->
+        <textarea name="body"></textarea>
+
+        <!-- この下に送信ボタンを作りましょう -->
+        <input type="submit" value="送信ボタン">
+
+        </form>
         
     </div>
 </div>
