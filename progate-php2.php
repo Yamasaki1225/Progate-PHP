@@ -2,11 +2,8 @@
 class Menu {
   public $name;
   
-  // コンストラクタの引数に$nameを入れてください
   public function __construct($name) {
-    // nameプロパティに引数の$nameを代入してください
     $this->name = $name;
-    
   }
   
   public function hello() {
@@ -14,15 +11,15 @@ class Menu {
   }
 }
 
-// new Menu()の引数に'CURRY'を入れてください
 $curry = new Menu('CURRY');
-// new Menu()の引数に'PASTA'を入れてください
 $pasta = new Menu('PASTA');
-// 以下の1行を消してください
 
-// 以下の1行を消してください
-$curry->hello();
-echo '<br>';
-$pasta->hello();
+?>
+
+<!-- <p>タグの中で、$curryのnameプロパティを表示してください -->
+<p><?php echo $curry->name ?></p>
+
+<!-- <p>タグの中で、$pastaのnameプロパティを表示してください -->
+<p><?php echo $pasta->name ?></p>
 
 ?>
