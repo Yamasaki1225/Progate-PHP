@@ -1,25 +1,23 @@
-<?php
-class Menu {
-  public $name;
-  
-  public function __construct($name) {
-    $this->name = $name;
-  }
-  
-  public function hello() {
-    echo '私は'.$this->name.'です';
-  }
-}
+<!-- ここでdata.phpを読み込んでください  -->
+<?php require('data.php'); ?>
 
-$curry = new Menu('CURRY');
-$pasta = new Menu('PASTA');
-
-?>
-
-<!-- <p>タグの中で、$curryのnameプロパティを表示してください -->
-<p><?php echo $curry->name ?></p>
-
-<!-- <p>タグの中で、$pastaのnameプロパティを表示してください -->
-<p><?php echo $pasta->name ?></p>
-
-?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Café Progate</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="menu-wrapper container">
+    <h1 class="logo">Café Progate</h1>
+    <div class="menu-items">
+      <?php foreach ($menus as $menu): ?>
+        <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
+      <?php endforeach ?>
+      
+    </div>
+  </div>
+</body>
+</html>
